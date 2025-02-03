@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ecossistema</string>
+
+    <string-array name="tipo_plantas">
+        <item>--------</item>
+        <item>Hortaliças</item>
+        <item>Ervas</item>
+        <item>Flores</item>
+        <item>Suculentas</item>
+    </string-array>
+
+</resources>

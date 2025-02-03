@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/tela_adicionar_planta">
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/table_border">
+
+        <TableRow>
+            <TextView
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Nome da planta:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/campoNome"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Data do plantio:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/campoData"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="dd/mm/aaaa"
+                android:focusable="false" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="Tipo da planta:"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/campoTipo"
+                android:entries="@array/tipo_plantas"
+                android:spinnerMode="dropdown"
+                 />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/categoryImage"
+                android:layout_width="127dp"
+                android:layout_height="100dp" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/buttonsalvar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Salvar"
+        android:backgroundTint="@color/green"
+        />
+</LinearLayout>
